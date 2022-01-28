@@ -1,5 +1,6 @@
 terraform {
   backend "azurerm" {
+    subscription_id      = "f7b8d1c4-c52f-4aaf-8c24-860c2b1c9d0c"
     resource_group_name  = "devops-prod"
     storage_account_name = "moulainfrastate"
     container_name       = "moula-training"
