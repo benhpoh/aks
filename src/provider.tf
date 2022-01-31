@@ -18,11 +18,11 @@ provider "azurerm" {
 provider "random" {
 }
 
-provider "kubernetes" {
-  host                   = module.azurerm_kubernetes_cluster_primary.kube_config.0.host
-  username               = module.azurerm_kubernetes_cluster_primary.kube_config.0.username
-  password               = module.azurerm_kubernetes_cluster_primary.kube_config.0.password
-  client_certificate     = base64decode(module.azurerm_kubernetes_cluster_primary.kube_config.0.client_certificate)
-  client_key             = base64decode(module.azurerm_kubernetes_cluster_primary.kube_config.0.client_key)
-  cluster_ca_certificate = base64decode(module.azurerm_kubernetes_cluster_primary.kube_config.0.cluster_ca_certificate)
-}
+# provider "kubernetes" {
+#   host                   = module.azurerm_kubernetes_cluster_primary.kube_config.0.host
+#   username               = module.azurerm_kubernetes_cluster_primary.kube_config.0.username
+#   password               = module.azurerm_kubernetes_cluster_primary.kube_config.0.password
+#   client_certificate     = base64decode(module.azurerm_kubernetes_cluster_primary.kube_config.0.client_certificate)
+#   client_key             = base64decode(module.azurerm_kubernetes_cluster_primary.kube_config.0.client_key)
+#   cluster_ca_certificate = base64decode(module.azurerm_kubernetes_cluster_primary.kube_config.0.cluster_ca_certificate)
+# }
