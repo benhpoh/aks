@@ -4,7 +4,7 @@ terraform {
     resource_group_name  = "devops-prod"
     storage_account_name = "moulainfrastate"
     container_name       = "moula-training"
-    key                  = "hug-lab.tfstate"
+    key                  = "lab-demo.tfstate"
   }
 }
 
